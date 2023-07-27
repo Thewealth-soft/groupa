@@ -1,0 +1,107 @@
+:root {
+  --color1: rgb(87, 150, 161);
+  --white: #fff;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
+body {
+  /* font-size: 70%; */
+  background: var(--greyLight-1);
+}
+
+.container {
+  height: 30rem;
+  width: 50%;
+  margin: 7rem auto;
+  box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
+}
+
+.header {
+  background-color: var(--greyDark);
+  text-align: center;
+  height: 6rem;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--greyLight-2);
+}
+
+.quiz-header {
+  color: #FFF;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  font-weight: 900;
+}
+
+.header>h4 {
+  color: #fff;
+  font-size: 1.8rem;
+  padding-bottom: 0.8rem;
+  margin: 0px;
+}
+
+.container>.question {
+  width: 80%;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  margin: 1rem auto;
+  border-radius: 0.8rem;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--white), inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 7.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.9rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: var(--greyDark);
+  color: #333;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+button:hover {
+  outline: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0.6rem 0;
+}
+
+.quiz-options div {
+  border: 0.5rem solid var(--greyLight-1);
+  padding: 4px;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 31rem;
+    width: 70%;
+    margin: 1rem auto;
+  }
+
+  .container>.question {
+    width: 90%;
+    padding: 0.8rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    height: 32rem;
+    width: 90%;
+  }
+}
